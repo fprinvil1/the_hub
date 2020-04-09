@@ -10,7 +10,7 @@
         {!!$post->body!!}
     </div>
     <hr>
-        <small>Written on: {{$post->created_at}}<br>By: {{$post->user->name}}</small>
+        <small>Written on: {{$post->created_at->toDayDateTimeString()}}<br>By: {{$post->user->name}}</small>
 
     @if(!Auth::guest())
         @if(Auth::user()->id == $post->user_id)
@@ -34,6 +34,8 @@
                             {{$comment->created_at->diffForHumans()}}: &nbsp;
                         </strong>
                         {!!$comment->body!!}
+
+                        <small>By: {{$comment->user->name}}</small>
                     </li>
                 @endforeach
             @endif

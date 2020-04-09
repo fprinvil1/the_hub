@@ -9,7 +9,7 @@
 
     </div>
     <hr>
-        <small>Written on: <?php echo e($post->created_at); ?><br>By: <?php echo e($post->user->name); ?></small>
+        <small>Written on: <?php echo e($post->created_at->toDayDateTimeString()); ?><br>By: <?php echo e($post->user->name); ?></small>
 
     <?php if(!Auth::guest()): ?>
         <?php if(Auth::user()->id == $post->user_id): ?>
@@ -38,6 +38,8 @@
                         </strong>
                         <?php echo $comment->body; ?>
 
+
+                        <small>By: <?php echo e($comment->user->name); ?></small>
                     </li>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             <?php endif; ?>

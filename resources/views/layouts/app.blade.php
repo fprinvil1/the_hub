@@ -19,6 +19,8 @@
     <script>tinymce.init({selector:'textarea'});</script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -28,5 +30,7 @@
             @yield('content')
         </div>
     </div>
+
+    @include('layouts.footer')
 </body>
 </html>

@@ -19,6 +19,8 @@
     <script>tinymce.init({selector:'textarea'});</script>
     <!-- Styles -->
     <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -28,6 +30,8 @@
             <?php echo $__env->yieldContent('content'); ?>
         </div>
     </div>
+
+    <?php echo $__env->make('layouts.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </body>
 </html>
 <?php /**PATH C:\xampp\htdocs\virtual_advisors\resources\views/layouts/app.blade.php ENDPATH**/ ?>

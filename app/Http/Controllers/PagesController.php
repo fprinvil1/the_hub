@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use App\Post;
 
 class PagesController extends Controller
 {
@@ -13,7 +14,9 @@ class PagesController extends Controller
 
         $title = "Welcome to The Hub";
 
-        return view('pages.index', compact('title','posts'));
+        $archives = Post::selectRaw('year(created_at) year, monthname(created_at) month, count(*) published')->groupBy('year', 'month')->get();
+
+        return view('pages.index', compact('title','posts','archives'));
     }
 
     public function about(){
