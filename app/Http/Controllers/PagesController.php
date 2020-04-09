@@ -14,7 +14,7 @@ class PagesController extends Controller
 
         $title = "Welcome to The Hub";
 
-        $archives = Post::selectRaw('year(created_at) year, monthname(created_at) month, count(*) published')->groupBy('year', 'month')->get();
+        $archives = Post::selectRaw('year(created_at) year, monthname(created_at) month, month(created_at) as month_val, count(*) published')->groupBy('year', 'month', 'month_val')->orderByRaw('min(created_at) desc')->get();
 
         return view('pages.index', compact('title','posts','archives'));
     }

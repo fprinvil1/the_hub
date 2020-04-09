@@ -1,6 +1,4 @@
-On branch master
-Your branch is up to date with 'origin/master'.
-
+On branch frantz_branch
 Changes not staged for commit:
   (use "git add/rm <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
@@ -14768,6 +14766,7 @@ Changes not staged for commit:
 	modified:   node_modules/yargs/node_modules/yargs-parser/package.json
 	modified:   node_modules/yargs/package.json
 	modified:   node_modules/yargs/yargs.js
+	modified:   output.txt
 	modified:   package-lock.json
 	modified:   package.json
 	modified:   phpunit.xml
@@ -14794,10 +14793,8 @@ Changes not staged for commit:
 	modified:   resources/views/auth/register.blade.php
 	modified:   resources/views/auth/verify.blade.php
 	modified:   resources/views/home.blade.php
+	modified:   resources/views/inc/sidebar.blade.php
 	modified:   resources/views/layouts/app.blade.php
-	modified:   resources/views/pages/index.blade.php
-	modified:   resources/views/posts/create.blade.php
-	modified:   resources/views/posts/show.blade.php
 	modified:   resources/views/welcome.blade.php
 	modified:   routes/api.php
 	modified:   routes/channels.php
@@ -14810,8 +14807,6 @@ Changes not staged for commit:
 	modified:   storage/framework/cache/.gitignore
 	modified:   storage/framework/cache/data/.gitignore
 	modified:   storage/framework/sessions/.gitignore
-	deleted:    storage/framework/sessions/IlmmotQv4EbTRUTG39p7xzxtd3sWAGGrN50p4ta7
-	deleted:    storage/framework/sessions/ZAvIUtHAxy6vYSXUIq6A2cLgNTRQVNWwKvllrXxp
 	modified:   storage/framework/testing/.gitignore
 	modified:   storage/framework/views/.gitignore
 	modified:   storage/framework/views/06bdabade26eef472076e5d1366036a90077319c.php
@@ -14824,8 +14819,6 @@ Changes not staged for commit:
 	modified:   storage/framework/views/20467c1f32926b7ca98cf9ab5af06ba53c08c1f7.php
 	modified:   storage/framework/views/28663163a8975887b77d5918270fb179ee7497f1.php
 	modified:   storage/framework/views/3016273ff80a1945523220338c768965a1873d41.php
-	modified:   storage/framework/views/3b1b73c3032f96622dad4b57f4cfb5025b79e344.php
-	modified:   storage/framework/views/3ce54e928552db3d03439bf3bef77d656c9f92e4.php
 	modified:   storage/framework/views/45e8ec52c6f6b4aff81b1bccf94c236167c21d02.php
 	modified:   storage/framework/views/463ab9f55f2de0b83c5e0416f8482a5194b791b6.php
 	modified:   storage/framework/views/47f9efebb4c27c9cca8d509906b3fa0139ce0836.php
@@ -23316,7 +23309,6 @@ Changes not staged for commit:
 	modified:   vendor/webmozart/assert/composer.json
 	modified:   vendor/webmozart/assert/psalm.xml
 	modified:   vendor/webmozart/assert/src/Assert.php
-	deleted:    virtual_advisors.zip
 	modified:   webpack.mix.js
 
 no changes added to commit (use "git add" and/or "git commit -a")
