@@ -10,6 +10,23 @@
                 <div class="card-body">
                     <h5 class="card-title"><a href="/posts/{{$post->id}}">{{$post->title}}</a></h5>
                     <small>Written on: {{$post->created_at}}<br>By: {{$post->user->name}}</small>
+                    @if(Auth::user()!= null)
+                      <!--Myron-->
+                      <div class="post" data-postid="{{ $post->id }}"><!--links to like.js-->
+                        <div class="interaction">
+                            <a href="#" class="btn btn-xs btn-secondary like" >    
+                                {{ Auth::user()->likes()->where('post_id', $post->id)->first() ? Auth::user()->likes()->where('post_id', $post->id)->first()->like == 1 ? 'Already liked' : 'Like' : 'Like'  }}
+                          </a>
+                            |
+                            <a href="#" class="btn btn-xs btn-danger like">  
+                                {{ Auth::user()->likes()->where('post_id', $post->id)->first() ? Auth::user()->likes()->where('post_id', $post->id)->first()->like == 0 ? 'Already disliked' : 'Dislike' : 'Dislike' }}              
+                            </a>       
+                        </div>
+                    </div>
+                    @else
+                    
+                    <p style="color:red;font-size:10px;">Login or create user to like post</p>
+                    @endif
                 </div>
             </div>
         @endforeach
@@ -19,4 +36,13 @@
     @else
         <p>No Posts Found</p>
     @endif
+         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="{{ asset('/js/like.js') }}"></script>
+  <script>
+    var token = '{{ Session::token() }}';
+    var urlLike = '{{ route('like') }}';
+  </script>
 @endsection

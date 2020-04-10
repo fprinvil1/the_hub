@@ -33,6 +33,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/posts/{post}/comments','CommentsController@store')->name('addComment');;
+Route::post('/posts/{post}/comments','CommentsController@store')->name('addComment');
+Route::get('/post', 'PostsController@index');
+
+//Myron
+Route::post('/like','PostsController@likePost')->name('like');
 
 Route::get('/chat', 'ChatController@index');
