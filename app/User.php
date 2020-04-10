@@ -40,4 +40,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    
+    //Myron
+    public function likes(){
+        return $this->hasMany('\App\Like');
+    }
 }

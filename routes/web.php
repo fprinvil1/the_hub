@@ -34,3 +34,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/posts/{post}/comments','CommentsController@store')->name('addComment');;
+
+//Myron
+Route::get('/post', 'PostsController@index');
+Route::post('/like','PostsController@likePost')->name('like');
