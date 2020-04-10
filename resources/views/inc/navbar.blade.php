@@ -32,7 +32,12 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/posts">Blog</a>
-              </li>      
+              </li>
+              @if(!Auth::guest())
+                <li class="nav-item">
+                  <a class="nav-link" href="/chat">Chat Room</a>
+                </li>
+              @endif      
             </ul>
             @if(!Auth::guest())
               <ul class="nav navbar-nav mr-right navbar-right">
@@ -52,7 +57,7 @@
                   </li>
                   @if (Route::has('register'))
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                          <a class="nav-link" href="{{ route('register') }}">{{ __('Sign Up') }}</a>
                       </li>
                   @endif
               @else

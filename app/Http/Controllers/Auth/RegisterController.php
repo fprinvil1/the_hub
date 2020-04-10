@@ -10,6 +10,9 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
+// first import StreamChat PHP client
+use GetStream\StreamChat\Client as StreamClient;
+
 class RegisterController extends Controller
 {
     /*
@@ -74,5 +77,26 @@ class RegisterController extends Controller
         \Mail::to($user)->send(new Welcome($user));
 
         return $user;
+    }
+
+    protected function registered($user){
+        $client = new StreamClient(env("MIX_STREAM_API_KEY"), env("MIX_STREAM_API_SECRET"), null, null, 9);
+    
+        $username = explode('@', $user->email)[0];
+    
+        // create the user on Stream Chat
+        $client->updateUser([
+            'id' => $username,
+            'name' => $user->name,
+        ]);
+    
+        // create channel
+        $channel = $client->Channel("messaging", "chatroom");
+    
+        // channel is created by `admin` user
+        $channel->create('admin');
+    
+        // then add the newly registered user as a member
+        $channel->addMembers([$username]);
     }
 }

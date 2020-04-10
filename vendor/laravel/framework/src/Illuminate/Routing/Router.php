@@ -395,11 +395,12 @@ class Router implements BindingRegistrar, RegistrarContract
      * Merge the given array with the last group stack.
      *
      * @param  array  $new
+     * @param  bool  $prependExistingPrefix
      * @return array
      */
-    public function mergeWithLastGroup($new)
+    public function mergeWithLastGroup($new, $prependExistingPrefix = true)
     {
-        return RouteGroup::merge($new, end($this->groupStack));
+        return RouteGroup::merge($new, end($this->groupStack), $prependExistingPrefix);
     }
 
     /**
@@ -482,7 +483,7 @@ class Router implements BindingRegistrar, RegistrarContract
     /**
      * Determine if the action is routing to a controller.
      *
-     * @param  array  $action
+     * @param  mixed  $action
      * @return bool
      */
     protected function actionReferencesController($action)
@@ -584,7 +585,10 @@ class Router implements BindingRegistrar, RegistrarContract
      */
     protected function mergeGroupAttributesIntoRoute($route)
     {
-        $route->setAction($this->mergeWithLastGroup($route->getAction()));
+        $route->setAction($this->mergeWithLastGroup(
+            $route->getAction(),
+            $prependExistingPrefix = false
+        ));
     }
 
     /**

@@ -34,7 +34,12 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/posts">Blog</a>
-              </li>      
+              </li>
+              <?php if(!Auth::guest()): ?>
+                <li class="nav-item">
+                  <a class="nav-link" href="/chat">Chat Room</a>
+                </li>
+              <?php endif; ?>      
             </ul>
             <?php if(!Auth::guest()): ?>
               <ul class="nav navbar-nav mr-right navbar-right">
@@ -54,7 +59,7 @@
                   </li>
                   <?php if(Route::has('register')): ?>
                       <li class="nav-item">
-                          <a class="nav-link" href="<?php echo e(route('register')); ?>"><?php echo e(__('Register')); ?></a>
+                          <a class="nav-link" href="<?php echo e(route('register')); ?>"><?php echo e(__('Sign Up')); ?></a>
                       </li>
                   <?php endif; ?>
               <?php else: ?>

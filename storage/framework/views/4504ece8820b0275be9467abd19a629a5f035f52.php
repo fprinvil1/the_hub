@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('content'); ?>
     <h1>Create Post</h1>
     <?php echo Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']); ?>
