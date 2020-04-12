@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
   <div class="container">
-      @if(!Auth::guest())
+    
+     @if(!Auth::guest())
         <a class="navbar-brand" href="{{ url('/home') }}">
             {{ config('app.name', 'Virtual Advisors') }}
         </a>
@@ -11,8 +12,8 @@
       @endif
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
           <span class="navbar-toggler-icon"></span>
-      </button>
-
+      </button> 
+    
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Left Side Of Navbar -->
           <ul class="navbar-nav mr-auto">
@@ -22,27 +23,25 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
                 @if(!Auth::guest())
-                  <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
-                @else
-                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="/home">Dashboard <span class="sr-only">(current)</span></a>
                 @endif
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/posts">Blog</a>
               </li>
               @if(!Auth::guest())
+              <li class="nav-item">
+                <a class="nav-link" href="/chat">Chat Room</a>
+              </li>
+              @endif
                 <li class="nav-item">
-                  <a class="nav-link" href="/chat">Chat Room</a>
-                </li>
-              @endif      
+                  <a class="nav-link" href="/about">About</a>
+                </li>     
             </ul>
             @if(!Auth::guest())
               <ul class="nav navbar-nav mr-right navbar-right">
                 <li class="nav-item">
-                  <a class="nav-link" href="/posts/create">Create Post</a>
+                <a href="/posts/create" class="btn btn-primary btn-xs">Create Post</a>
                 </li>
               </ul>
             @endif
