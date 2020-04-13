@@ -16,8 +16,6 @@
     <h4>Elsewhere</h4>
     <ol class="list-unstyled">
       <li><a target="_blank" href="https://github.com/fprinvil1/the_hub">GitHub</a></li>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">Facebook</a></li>
     </ol>
   </div>
 </div>

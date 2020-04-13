@@ -65,6 +65,15 @@
                             </div>
                         </div>
                     </form>
+
+                <!--The start--><div class="card-body">
+                <hr>
+                    <div class="col-md-8 offset-md-2 text-center">
+                    <p>Don't have an account? <br> Create one now and join The Hub</p>  
+                    @if (Route::has('register'))                  
+                        <a class="btn btn-primary" href="{{ route('register') }}" role="button">{{ __('Sign Up') }}</a>
+                    @endif
+                <!--The end --> </div>
                 </div>
             </div>
         </div>
