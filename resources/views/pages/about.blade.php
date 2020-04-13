@@ -23,7 +23,7 @@
 </p>
 <h2>Team Members</h2>
 <div class="grid-container">
-    <div class="card">
+    <div class="david-card">
       <img class="about-card" src="/storage/about_images/Frantz.jpg" alt="Avatar" style="width:100%">
       <div class="container">
         <h4><b>Frantz Prinvil</b></h4> 
@@ -31,48 +31,48 @@
       </div>
     </div>
     <!---------------------------------------------------->
-    <div class="card">
+    <div class="david-card">
       <img class="about-card"  src="/storage/about_images/rob.jpg"alt="Avatar" style="width:100%">
-      <div class="container">
+      <div class="david-container">
         <h4><b>Robert Jones</b></h4> 
         <p>Major: Computer Engineering</p> 
       </div>
     </div>
     <!---------------------------------------------------->
-      <div class="card">
+      <div class="david-card">
       <img class="about-card" src="/storage/about_images/kenan.jpg" alt="Avatar" style="width:100%">
-      <div class="container">
+      <div class="david-container">
         <h4><b>Kenan Eregli</b></h4> 
         <p>Major: Computer Engineering & Computer science </p> 
       </div>
     </div>
     <!---------------------------------------------------->
-    <div class="card">
+    <div class="david-card">
       <img class="about-card" src="/storage/about_images/myron.jpg" alt="Avatar" style="width:100%">
-      <div class="container">
+      <div class="david-container">
         <h4><b>Myron Zambrano</b></h4> 
         <p>Major: Computer science </p> 
       </div>
     </div>
     <!---------------------------------------------------->
-    <div class="card">
+    <div class="david-card">
       <img class="about-card" src="/storage/about_images/Snapchat.jpg" alt="Avatar" style="width:100%">
-      <div class="container">
+      <div class="david-container">
         <h4><b>Sean Ciser</b></h4> 
         <p>Major: Computer Engineering & Computer science </p> 
       </div>
     </div>
     <!---------------------------------------------------->
-    <div class="card">
+    <div class="david-card">
       <img class="about-card" src="/storage/about_images/David.jpg" alt="Goat" style="width:100%">
-       <div class="container">
+       <div class="david-container">
         <h4><b>Davidson Dore</b></h4> 
         <p class="title">Major: Computer Engineering </p>
        </div>
     
        </div>
       </div>
-<div class="container-howto">
+<div class="david-container-howto">
       <h2>How to</h2>
 <p><b>Before you can start posting your own blogs you must first create your own acount.You can do so by following the steps below.</b> .</p>
 <p>1.Go to the top right of webpage and click on the <b> "Sign in " </b>icon(this is if you havent created an account yet , if you already have an acount skip to step 4). </p>
