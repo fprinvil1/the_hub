@@ -26,7 +26,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="css/sticky-footer.css" rel="stylesheet">
     <link href="css/sidebar.css" rel="stylesheet">
+    <link href="{{ asset('css/about.css') }}" rel="stylesheet">
     <link href="{{ asset('css/webpage.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">

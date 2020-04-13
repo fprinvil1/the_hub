@@ -83,7 +83,7 @@
 <p>6.After you have finished typing up your blog and slelcted a picture, click on <b>"Publish".</b></p>
 <p>7.Congratulations you have created your first Blog post.</p>
 </div>
-<h3>Editig</h3>
+<h3>Editing</h3>
 <p><b>If you are not happy with what you have posted you can always go back and edit it, flow the step below to do so.</b> </p>
 <p>1.At the top of your navigation bar you will see a icon labled <b>"Home"</b>, click on it.</p>
 <p>2.From here you will see an <b>"Edit"</b> icon, click on it. </p>
@@ -92,10 +92,6 @@
 
 </body>
 
-     <link href="css/about.css" rel="stylesheet">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="css/sticky-footer.css" rel="stylesheet">
-    <link href="css/sidebar.css" rel="stylesheet">
 </html>  
 
 @endsection
