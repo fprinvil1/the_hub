@@ -4,7 +4,7 @@
   <div class="jumbotron">
     <div class="container">
         <h1 class="display-3">{{$title}}</h1>
-        <p>Post. Like. Share. A forum that fosters creativity and knowledge transfer.</p>
+        <p></p>
         <p><a class="btn btn-primary btn-lg" href="/about" role="button">Learn more &raquo;</a></p>
     </div>
   </div>

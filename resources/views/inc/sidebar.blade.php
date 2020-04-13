@@ -1,7 +1,7 @@
 <div class="col-sm-3 offset-sm-1 blog-sidebar">
   <div class="sidebar-module sidebar-module-inset">
     <h4>What is the Hub?</h4>
-      <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+      <p>The Hub is greate space for Studends, Professors and Advisors to post,like ,and share blogs that fosters creativity and the transfer of knowledge.</p>
   </div>
   
   <div class="sidebar-module">
