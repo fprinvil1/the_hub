@@ -15,9 +15,9 @@
   <div class="sidebar-module">
     <h4>Elsewhere</h4>
     <ol class="list-unstyled">
-      <li><a target="_blank" href="https://github.com/fprinvil1/the_hub">GitHub</a></li>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">Facebook</a></li>
+      <li><a target="_blank" href="https://github.com/fprinvil1/the_hub"><img style="height: 20%;width: 20%; " src="/storage/webpage_images/github.png"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
     </ol>
   </div>
 </div>
