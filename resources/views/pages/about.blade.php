@@ -32,7 +32,7 @@
     </div>
     <!---------------------------------------------------->
     <div class="card">
-      <img src="/storage/about_images/rob.jpg"alt="Avatar" style="width:100%">
+      <img src="/storage/about_images/rob1.jpg"alt="Avatar" style="width:100%">
       <div class="container">
         <h4><b>Robert Jones</b></h4> 
         <p>Major: Computer Engineering</p> 
