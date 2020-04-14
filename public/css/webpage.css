@@ -43,6 +43,7 @@
 .jumbotron {
     background-image: url(/storage/webpage_images/welcome.jpg);
     background-size: cover;
+    background-position: center top;
 }
 .text-muted {
     color: white !important;
