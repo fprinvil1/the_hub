@@ -51,8 +51,8 @@
           <ul class="navbar-nav ml-auto">
               <!-- Authentication Links -->
               @guest
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <form class="form-inline my-2 my-lg-0" action="/posts">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" name="keyword" aria-label="Search">
                 <button class="btn btn-primary my-2 my-sm-0" href="/posts/?hello" type="submit">Search</button>
               </form>
 

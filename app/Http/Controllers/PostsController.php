@@ -43,6 +43,12 @@ class PostsController extends Controller
     
             $posts->whereYear('created_at', $year);
         }
+
+        if($keyword = request('keyword'))
+        {
+            $posts->where('title','LIKE', '%'.$keyword.'%');
+
+        }
     
         $posts = $posts->paginate(6);
         
