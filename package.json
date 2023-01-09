@@ -25,7 +25,7 @@
     },
     "dependencies": {
         "@ckeditor/ckeditor5-build-classic": "^17.0.0",
-        "stream-chat": "^1.7.2",
+        "stream-chat": "^8.2.1",
         "vue": "^2.6.11"
     }
 }
